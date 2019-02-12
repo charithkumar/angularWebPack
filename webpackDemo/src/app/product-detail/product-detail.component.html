@@ -1,0 +1,15 @@
+<div *ngIf="product">
+  <h2>{{product.productName | uppercase}} Details</h2>
+  <div><span>Id: </span>{{product.productId}}</div>
+  <div><span>Price: </span>Rs. {{product.productPrice}}</div>
+  <div>
+    <label>Product Name:
+      <input [(ngModel)]="product.productName" placeholder="name"/><br>
+        <img src={{product.imagePath}}  style="height:300px;width:50%;padding:10px 5px;">
+    </label>
+  </div>
+  <button (click)="goBack()" style="padding: 10px 10px;margin-right:16px">go back</button>
+  <button (click)="save()" style="padding: 10px">save</button>
+</div>
+
+

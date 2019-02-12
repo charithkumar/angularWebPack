@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: cdevarasetty
+Build-Jdk: 9.0.4
+Implementation-Title: hibernateDemo
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: delo
+Implementation-URL: http://maven.apache.org
+Main-Class: com.Application
+Created-By: Maven Integration for Eclipse
+

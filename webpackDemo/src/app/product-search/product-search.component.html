@@ -1,0 +1,20 @@
+<div id="search-component">
+  <h4>Product Search</h4>
+<div>
+  <input type="text" id="search-box" (ngModelChange)="valuechange($event)"  [(ngModel)]="userFilter.productName" placeholder="Type to filter by name">
+  <button  class="btn btn-outline-success my-2 my-sm-0"  type="submit" (click)="search()">Search</button>
+  <ul *ngIf="isSearch">
+    <li *ngFor="let product of products | filterBy: userFilter">
+      <a (click)="setEvent() "routerLink="/productDetails/{{product.productId}}">
+        {{product.productName}}
+      </a>
+    </li>
+     <li *ngIf="(products| filterBy: userFilter).length === 0">
+      No matching elements
+    </li>
+  </ul>
+</div>
+
+
+</div>
+

@@ -1,0 +1,25 @@
+<h3 style="font-size: 30px;padding: 10px;">Top Products</h3>
+<div class="grid grid-pad"  style="height:300px;padding:10px 10px;">
+  <div class="page-container">
+    <div  class="row">
+  <a *ngFor="let product of products" class="col-1-4"
+      routerLink="/productDetails/{{product.productId}}">
+
+      <h4 style="padding:5px 5px;font-size:20px;">{{product.productName}} </h4>
+      <div style="text-align:center;">
+         <img src={{product.imagePath}}  class="img-rounded"  style="height:250px;width:100%;padding:10px 10px;text-align:center;">
+      </div>
+     <div style="text-align:center;">Rs. {{product.productPrice}}</div>
+
+  </a>
+  </div>
+  </div>
+</div>
+
+<!-- <div class="page-container">
+    <div  class="row">
+    <app-product-search></app-product-search>
+    </div>
+    </div> -->
+
+

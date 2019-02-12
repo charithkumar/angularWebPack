@@ -1,0 +1,8 @@
+.header{
+  -webkit-text-fill-color:black;
+  background-color:seagreen;
+}
+
+.cartdiv{
+  justify-content: flex-end;
+}

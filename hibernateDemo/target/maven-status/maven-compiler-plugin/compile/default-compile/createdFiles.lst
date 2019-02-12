@@ -1,0 +1,7 @@
+com\controller\ProductController.class
+com\productData\Dao\ProductRepository.class
+com\SwaggerConfig.class
+com\controller\CorsFilter.class
+com\studentData\Bean\ProductDataBean.class
+com\productData\Dao\productDataDao.class
+com\Application.class
